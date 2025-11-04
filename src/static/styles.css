@@ -77,13 +77,27 @@ section h3 {
 .activity-card .participant-list {
   margin-top: 10px;
   padding-left: 20px;
-  list-style-type: disc;
+  list-style-type: none;
   color: #555;
 }
 
 .activity-card .participant-list li {
   margin-bottom: 4px;
   font-size: 0.95em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-participant {
+  cursor: pointer;
+  color: #c62828;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.delete-participant:hover {
+  opacity: 1;
 }
 
 .form-group {
